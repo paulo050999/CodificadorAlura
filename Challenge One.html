@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto - Sua Ferramenta Online</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content-left">
+            <header class="header-content">
+                <img src="/assets/cicada33.png" class="logo" alt="Logo Alura">
+                <h1>Decodificador de Texto</h1>
+            </header>
+
+            <main>
+                <div class="input-group">
+                    <h2>Criptografar Texto</h2>
+                    <textarea id="textoParaCriptografar" placeholder="Digite o texto aqui..."></textarea>
+                </div>
+                <div class="botao-container">
+                    <button onclick="criptografarTexto()">Criptografar</button>
+                </div>
+                <p id="mensagemErro" class="mensagem-erro"></p>
+
+                <div class="input-group">
+                    <h2>Descriptografar Texto</h2>
+                    <textarea id="textoParaDescriptografar" placeholder="Digite o texto criptografado..."></textarea>
+                </div>
+                <div class="botao-container">
+                    <button onclick="descriptografarTexto()">Descriptografar</button>
+                </div>
+
+                <div id="areaResultado" class="resultado">
+                    <p id="resultadoTexto"></p>
+                </div>
+            </main>
+        </div>
+
+        <div class="content-right">
+            <div class="input-group">
+                <h2>Texto Criptografado</h2>
+                <textarea id="textoCriptografado" placeholder="Texto criptografado será exibido aqui..." readonly></textarea>
+            </div>
+            <div class="botao-container">
+                <button class="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+
+            <img class="imagem-moldura" src="/assets/codificador_menino.png" alt="codificador_menino">
+
+            
